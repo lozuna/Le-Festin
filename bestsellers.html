@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<title>Best Sellers</title>
+<style>
+    body {
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+    #logo{
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 1;
+    }
+    #nav{
+    text-align: center;
+    border-style: solid;
+    border-color: #f6af11;
+    border-spacing: 2px;
+    padding: 15px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 2;
+    }
+    .navbuttons{
+    margin: 40px;
+    color: #f6af11;
+    font-weight: bold;
+    }
+    h3{
+        color: white;
+    }
+    input{
+        margin-top: 5px;
+        margin-right: 5px;
+        float: right;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        padding: 5px;
+    }
+    h4 {
+        margin: 0;
+        padding: 0;
+        font-size: 12pt;
+        color: white;
+    }
+    #lowerSections {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .section {
+        margin: 10px;
+        padding: 10px;
+        background-color: #f6af11;
+        border-style: solid;
+        border-width: 1px 1px 2px 1px;
+        border-color: #eaeaea #eaeaea #d8d8d8 #eaeaea;
+        border-radius: 5px;
+    }
+    .sectionImg {
+        width: 100%;
+    }
+    .subSectionTitle {
+        margin: 10px 0;
+        padding: 15px 0;
+        border-bottom: 1px solid #d5d5d5;
+    }
+    .subSectionTitle:last-child {
+        border-bottom: 0px;
+    }
+    .priceTitle {
+        font-size: 15pt;
+        font-weight: bold;
+        color: white;
+        
+    }
+    select[name="size"] {
+        margin-top: 15px;
+    }
+    #sectionA {
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
+    #sectionB {
+        grid-column-start: 2;
+        grid-row-start: 1;
+    }
+    #sectionC {
+        grid-column-start: 3;
+        grid-row-start: 1;
+    }  
+    #sectionD {
+        grid-column: 1 ;
+        grid-row-start: 2;
+    }
+    #sectionE {
+        grid-column-start: 2;
+        grid-row-start: 2;
+    }    
+</style>
+</head>
+<body>
+    <div id="logo">
+        <img src="website-header.png" alt="header"/>
+    </div>
+    <nav id="nav">
+        <a href="final-project.html" class="navbuttons">Home</a>
+        <a href="earrings.html" class="navbuttons">Earrings</a>
+        <a href="rings.html" class="navbuttons">Rings</a>
+        <a href="necklaces.html" class="navbuttons">Necklaces</a>
+        <a href="faq.html" class="navbuttons">FAQs</a>
+    </nav>
+
+    <div id="lowerSections">
+        <div id="sectionA" class="section">
+            <h3 class="sectionHeading">Bad Bunny Earrings</h3>
+            <img class="sectionImg" src="benito.jpg" alt="Benito" />
+            <div class="subSectionTitle">
+                <div class="priceTitle">$15</div>
+            </div>
+            <div class="subSectionTitle">
+                <h4> Quantity:
+                    <select name="quantity">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                    <br/>
+                    <input value="Add to Cart" type="submit"/>
+                 </h4>
+            </div>
+        </div>
+
+        <div id="sectionB" class="section">
+            <h3 class="sectionHeading">8 Ball Earrings</h3>
+            <img class="sectionImg" src="8ball.jpg" alt="8 Ball" />
+            <div class="subSectionTitle">
+                <div class="priceTitle">$10</div>
+            </div>
+            <div class="subSectionTitle">
+                <h4> Quantity:
+                    <select name="quantity">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                    <br/>
+                    <input value="Add to Cart" type="submit"/>
+                </h4>
+            </div>    
+        </div>
+
+        <div id="sectionC" class="section">
+            <h3 class="sectionHeading">Fairy Wand Earrings</h3>
+            <img class="sectionImg" src="wand.JPG" alt="Wand" />
+            <div class="subSectionTitle">
+                <div class="priceTitle">$10</div>
+            </div>
+            <div class="subSectionTitle">
+                <h4> Quantity:
+                    <select name="quantity">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                    <br/>
+                    <input value="Add to Cart" type="submit"/>
+                </h4>
+            </div>   
+        </div>
+        
+        <div id="sectionD" class="section">
+            <h3 class="sectionHeading">Sun Ring</h3>
+            <img class="sectionImg" src="sun.JPG" alt="Sun" />
+            <div class="subSectionTitle">
+                <div class="priceTitle">$15</div>
+            </div>
+            <div class="subSectionTitle">
+                <h4> Quantity:
+                    <select name="quantity">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                    <br/>
+                    Ring Size:
+                    <select name="size">
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                    </select>
+                    <br/>
+                    <input value="Add to Cart" type="submit"/>
+                </h4>
+            </div>   
+        </div>
+
+        <div id="sectionE" class="section">
+            <h3 class="sectionHeading">Gemstone Necklace</h3>
+            <img class="sectionImg" src="gemNecklace.JPG" alt="Gem Neck" />
+            <div class="subSectionTitle">
+                <div class="priceTitle">$15</div>
+            </div>
+            <div class="subSectionTitle">
+                <h4> Quantity:
+                    <select name="quantity">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                    <br/>
+                    <input value="Add to Cart" type="submit"/>
+                </h4>
+            </div>       
+        </div>
+    </div>
+</body>
+</html>

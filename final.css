@@ -1,0 +1,107 @@
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #f6af11;
+    margin-left: 20px;
+    margin-left: 20px;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+
+}
+h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+#logo{
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 1;
+}
+#nav{
+    text-align: center;
+    border-style: solid;
+    border-color: #f6af11;
+    border-spacing: 2px;
+    padding: 15px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 2;
+}
+.navbuttons{
+    margin: 40px;
+    color: #f6af11;
+    font-weight: bold;
+}
+#startimg{
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 3;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+#startpage{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 4;
+    margin: 30px;
+    margin-top: 60px;
+}
+.product{
+    margin: 30px;
+}
+.text{
+    color: black;
+}
+#artistimg{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 6;
+    margin-top: 100px;
+}
+#artisttext{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row: 6;
+    margin: 30px;
+    margin-top: 70px;
+}
+#smalltext{
+    color: black;
+    font-size: 10pt;
+}
+footer{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 2800px;
+    height: 200px;
+    background-color: #f6af11;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-family: Verdana, serif;
+}
+#foot{
+    margin-left: 25px;
+}
+#footertext{
+    text-align: left;
+    margin-left: 25px;
+}  
+a:link 
+    {color: #f6af11; text-decoration: underline;}
+a:hover 
+    {color: #ff4500; text-decoration: none;}
+a:visited
+    {color: #f6af11; text-decoration: underline;}
+
